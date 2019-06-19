@@ -1,0 +1,2 @@
+#grep files ending with .log
+ find . -name "*.log"
