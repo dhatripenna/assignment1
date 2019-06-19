@@ -1,5 +1,10 @@
 #grep .log in /var/log directory
-#I have used find instead of grep
- find . -name "*.log"
+ find -name "*.log"
  
-#
+ #zip files which are older than 5 days
+ find . -mtime +5 -name '*.log' -exec gzip                          {} \;
+
+ 
+#remove files which are older than 10 days
+find . -type f -mtime +10 -ls -name '*.log' -exec rm {} \;
+
