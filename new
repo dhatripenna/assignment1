@@ -1,2 +1,5 @@
-#grep files ending with .log
+#grep .log in /var/log directory
+#I have used find instead of grep
  find . -name "*.log"
+ 
+#
