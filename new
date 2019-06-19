@@ -6,6 +6,6 @@
 
  
 #remove files which are older than 10 days
- find . -type f -mtime +10 -name '*.log' -exec rm  {} \;
+ find . -type f -mtime +10 -name '*.log.gz' -exec rm  {} \;
 
 
